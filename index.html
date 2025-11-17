@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-CERAMICA | Керамички Производи</title>
+    <meta name="description" content="V-CERAMICA - Врвни керамички производи. Плочки, санитарии, бањска опрема и уште повеќе.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p style="margin-top: 20px; color: var(--primary);" data-key="loading.text">Вчитување...</p>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="active" data-lang="mk">МК</button>
+        <button data-lang="sr">СР</button>
+        <button data-lang="en">EN</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">V<span>-</span>CERAMICA</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active" data-key="nav.home">Почетна</a></li>
+                <li><a href="#about" data-key="nav.about">За нас</a></li>
+                <li><a href="#products" data-key="nav.products">Производи</a></li>
+                <li><a href="#gallery" data-key="nav.gallery">Галерија</a></li>
+                <li><a href="#faq" data-key="nav.faq">ЧПП</a></li>
+                <li><a href="#contact" data-key="nav.contact">Контакт</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta" data-key="nav.consultation">Консултации</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>V-CERAMICA</h1>
+            <p data-key="hero.description">Производство и продажба на модерни мијалници, трпезарииски маси и декоративни елементи со комбинација на керамички плочки, бетон и метал</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary" data-key="hero.viewCollection">Види Колекција</a>
+                <a href="#contact" class="btn btn-secondary" data-key="hero.bookConsultation">Закажи Консултација</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="about.title">За V-CERAMICA</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 data-key="about.subtitle">Повеќе од 15 години искуство во керамичката индустрија</h3>
+                    <p data-key="about.paragraph1">V-CERAMICA претставува синоним за квалитет, прецизност и современ дизајн. Секој наш производ е резултат на внимателен избор на материјали и посветеност на врвно занаетчиство.</p>
+                    <p data-key="about.paragraph2">Нашата страст кон совршенството се огледува во секој детаљ - од почетната консултација до финалната инсталација на вашите керамички површини.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-gem"></i>
+                            <h4 data-key="about.feature1.title">Премиум Квалитет</h4>
+                            <p data-key="about.feature1.description">Користиме само најквалитетни керамички материјали</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-palette"></i>
+                            <h4 data-key="about.feature2.title">Широк Асортиман</h4>
+                            <p data-key="about.feature2.description">Богат избор на плочки, санитарии и опрема</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4 data-key="about.feature3.title">Гарантиран Квалитет</h4>
+                            <p data-key="about.feature3.description">15+ години искуство во индустријата</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4 data-key="about.feature4.title">Брза Испорака</h4>
+                            <p data-key="about.feature4.description">Ефикасна логистика низ целиот регион</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703347547603115/att.2wpm-QSFE0TCXxkfrXsTVOkA_i8PfuPK00-FcLIRyVc.jpeg?ex=691b7bba&is=691a2a3a&hm=277d6e82361c3291e88108ce467de9cda3efba6894775899494a551db65300eb&" alt="Нашата изложбена просторија">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="products.title">Наши Производи</h2>
+            <div class="products-grid">
+                <!-- Продукт 1: Модерни мијалници -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703347878957068/att.70LdZqSPBAcZL87azrIUnnpc9ZNX7jme4hyqcVJoB1U.jpeg?ex=691b7bba&is=691a2a3a&hm=1e6956289a344cfda6c0e6531a81cb2febd4f16228297c0d6ebebe0088130a3b&" alt="Модерни мијалници">
+                        <div class="product-overlay">
+                            <a href="#contact" class="btn btn-primary" data-key="products.requestQuote">Побарај Понуда</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-key="products.product1.title">Модерни Мијалници со 4 Врати</h3>
+                        <p data-key="products.product1.description">Врвни модерни мијалници со комбинација на керамика, бетон и метал. Интелигентен дизајн со 4 пространи оддела за максимална организација. Современ изглед кој ја надополнува секоја бања со стил и функционалност.</p>
+                        <div class="product-price" data-key="products.price">По договор</div>
+                    </div>
+                </div>
+
+                <!-- Продукт 2: Трпезарииски маси -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703347547603115/att.2wpm-QSFE0TCXxkfrXsTVOkA_i8PfuPK00-FcLIRyVc.jpeg?ex=691b7bba&is=691a2a3a&hm=277d6e82361c3291e88108ce467de9cda3efba6894775899494a551db65300eb&" alt="Трпезарииски маси">
+                        <div class="product-overlay">
+                            <a href="#contact" class="btn btn-primary" data-key="products.requestQuote">Побарај Понуда</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-key="products.product2.title">Трпезарииски Маси</h3>
+                        <p data-key="products.product2.description">Модерни рачно изработени керамички трпезариски маси, дизајнирани да внесат елеганција, трајност и топлина во секој дом. Комбинацијата од цврста метална конструкција и висококвалитетна керамика создава баланс помеѓу минимализам и луксуз, идеален за современи ентериери.</p>
+                        <div class="product-price" data-key="products.price">По договор</div>
+                    </div>
+                </div>
+
+                <!-- Продукт 3: Модерни мијалници -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703348486865091/att.ryy4pFHZKeCbhqWtaC5FAptXn_KJQ5xabhF8tOMb01U.jpeg?ex=691b7bba&is=691a2a3a&hm=79b6b33589bf86c1e4f3ebbfee09adb01d9aa495e47a373c35007ef9e0eedd6c&" alt="Модерни мијалници">
+                        <div class="product-overlay">
+                            <a href="#contact" class="btn btn-primary" data-key="products.requestQuote">Побарај Понуда</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-key="products.product3.title">Модерни Мијалници со 4 Врати</h3>
+                        <p data-key="products.product3.description">Врвни модерни мијалници со комбинација на керамика, бетон и метал. Интелигентен дизајн со 4 пространи оддела за максимална организација. Современ изглед кој ја надополнува секоја бања со стил и функционалност.</p>
+                        <div class="product-price" data-key="products.price">По договор</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="gallery.title">Галерија на Проекти</h2>
+            <div class="gallery-grid">
+                <!-- Слика 1: Модерна бања -->
+                <div class="gallery-item fade-in">
+                    <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703347878957068/att.70LdZqSPBAcZL87azrIUnnpc9ZNX7jme4hyqcVJoB1U.jpeg?ex=691b7bba&is=691a2a3a&hm=1e6956289a344cfda6c0e6531a81cb2febd4f16228297c0d6ebebe0088130a3b&" alt="Модерна бања">
+                    <div class="gallery-overlay">
+                        <h3 data-key="gallery.image1">Модерна Бања</h3>
+                    </div>
+                </div>
+
+                <!-- Слика 2: Трпезарија -->
+                <div class="gallery-item fade-in">
+                    <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703348189073479/att.hV1-iYnCX4fLhD0EO_mKb4QqxhN8lbZxgD1fzOuf4DQ.jpeg?ex=691b7bba&is=691a2a3a&hm=23bbccdb822030c2959c1fe540dab0311ca43f2ba6c7c59e000c7271cee13f37&" alt="Трпезарија">
+                    <div class="gallery-overlay">
+                        <h3 data-key="gallery.image2">Трпезарија</h3>
+                    </div>
+                </div>
+
+                <!-- Слика 3: Декорација -->
+                <div class="gallery-item fade-in">
+                    <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703348486865091/att.ryy4pFHZKeCbhqWtaC5FAptXn_KJQ5xabhF8tOMb01U.jpeg?ex=691b7bba&is=691a2a3a&hm=79b6b33589bf86c1e4f3ebbfee09adb01d9aa495e47a373c35007ef9e0eedd6c&" alt="Декорација">
+                    <div class="gallery-overlay">
+                        <h3 data-key="gallery.image3">Декорација</h3>
+                    </div>
+                </div>
+
+                <!-- Слика 4: Изложбен простор -->
+                <div class="gallery-item fade-in">
+                    <img src="https://cdn.discordapp.com/attachments/1439670749383360544/1439703347547603115/att.2wpm-QSFE0TCXxkfrXsTVOkA_i8PfuPK00-FcLIRyVc.jpeg?ex=691b7bba&is=691a2a3a&hm=277d6e82361c3291e88108ce467de9cda3efba6894775899494a551db65300eb&" alt="Изложбен простор">
+                    <div class="gallery-overlay">
+                        <h3 data-key="gallery.image4">Изложбен Простор</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="faq.title">Често Поставувани Прашања</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-key="faq.question1">Колку време трае испораката?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-key="faq.answer1">Стандардната испорака трае 5-7 работни дена. За специјални нарачки времето на испорака може да биде до 14 дена.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-key="faq.question2">Дали нудите гаранција на производите?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-key="faq.answer2">Да, сите наши производи имаат гаранција од 2 години. За керамичките елементи гаранцијата е 5 години.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-key="faq.question3">Можам ли да ја прилагодам бојата или димензиите?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-key="faq.answer3">Да, нудиме услуги на прилагодување според вашите потреби. Контактирајте не за консултација.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-key="faq.question4">Дали вршите инсталација?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-key="faq.answer4">Да, нудиме професионална инсталација на сите наши производи. Цената на инсталација е одделна.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="contact.title">Контактирајте Не</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-key="contact.subtitle">Закажете бесплатни консултации</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-key="contact.address">Адреса</h4>
+                            <p data-key="contact.addressValue">Вашата адреса ќе биде овде</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-key="contact.phone">Телефон</h4>
+                            <p>+389 70 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-key="contact.email">Е-пошта</h4>
+                            <p>info@v-ceramica.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-key="contact.hours">Работно Време</h4>
+                            <p data-key="contact.weekdays">Понеделник - Петок: 08:00 - 16:00</p>
+                            <p data-key="contact.saturday">Сабота: 08:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="contact.form.name">Име и Презиме *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-key="contact.form.email">Е-пошта *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-key="contact.form.phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="contact.form.message">Порака *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-key="contact.form.submit">Испрати Порака</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">V<span>-</span>CERAMICA</div>
+                    <p data-key="footer.description">Водечки добавувач на врвни керамички производи со повеќе од 15 години искуство во индустријата. Специјализирани за керамички плочки, санитарии и бањска опрема.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vceramica.studio" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-key="footer.links">Брзи Линкови</h4>
+                    <ul>
+                        <li><a href="#home" data-key="nav.home">Почетна</a></li>
+                        <li><a href="#about" data-key="nav.about">За нас</a></li>
+                        <li><a href="#products" data-key="nav.products">Производи</a></li>
+                        <li><a href="#gallery" data-key="nav.gallery">Галерија</a></li>
+                        <li><a href="#faq" data-key="nav.faq">ЧПП</a></li>
+                        <li><a href="#contact" data-key="nav.contact">Контакт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-key="contact.title">Контакт</h4>
+                    <p><i class="fas fa-phone"></i> +389 70 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@v-ceramica.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-key="contact.addressValue">Вашата адреса</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 V-CERAMICA. <span data-key="footer.rights">Сите права задржани.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
