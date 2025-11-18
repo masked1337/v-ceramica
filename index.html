@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Loading Spinner -->
@@ -337,6 +339,60 @@
     <a href="#home" class="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </a>
+
+    <script>
+        // EmailJS Initialization
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY_HERE"); // Zamenete so vashiot EmailJS public key
+        })();
+
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            const phone = formData.get('phone') || 'Не е внесено';
+            
+            if (!name || !email || !message) {
+                alert('Ве молам пополнете ги сите задолжителни полиња.');
+                return;
+            }
+            
+            // Show loading
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Испраќање...';
+            submitBtn.disabled = true;
+            
+            // Prepare email data
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                phone: phone,
+                message: message,
+                to_email: "vceramica.studio@gmail.com", // Zamenete so vashiot email
+                date: new Date().toLocaleString('mk-MK')
+            };
+            
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    alert('Ви благодариме! Вашата порака е успешно испратена. Ќе ве контактираме наскоро.');
+                    document.getElementById('contactForm').reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                })
+                .catch(function(error) {
+                    console.error('EmailJS Error:', error);
+                    alert('Настана грешка при испраќање на пораката. Обидете се повторно или контактирајте не директно на телефон.');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
 
     <script src="js/main.js"></script>
     <script src="js/language.js"></script>
